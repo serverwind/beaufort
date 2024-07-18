@@ -1,0 +1,109 @@
+html, body {
+  margin: 0 auto;
+}
+
+.calc {
+  background-color: #242424;
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+#number {
+  width: 30%;
+  border-radius:3px;
+  border: 0;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+#values {
+  width: 30%;
+  border-radius:3px;
+  border: 0;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+#submit {
+  border-radius:3px;
+  border: 0;
+  background-color: #5fa8e7;
+  font-size: 1.2rem;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submit:hover {
+  background-color: #5fa;
+}
+
+.value-desc {
+  font-weight: bold;
+}
+
+.wind-result {
+  padding: 4rem 0;
+}
+
+.wind-info {
+  display:grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 20px;
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem 0;
+  border-radius: 5px;
+}
+
+.wind-hidden {
+  display: none;
+}
+
+.wind-calm {
+  background-image: url('./img/calm.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.wind-light {
+  background-image: url('./img/light.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.wind-moderate {
+  background-image: url('./img/moderate.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.wind-high {
+  background-image: url('./img/high.jpg');
+  background-size: cover;
+  background-position-y: 70%;
+}
+
+.wind-very-high {
+  background-image: url('./img/very-high.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.wind-storm {
+  background-image: url('./img/storm.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .calc {
+    flex-direction: column;
+  }
+  #number, #values {width: 100%;}
+}
+

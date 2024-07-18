@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Webpack App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../src/style.css">
+    </head>
+    <body>
+        <h1>Beaufort Wind Scale</h1>
+
+        <section class="calc-wrapper">
+          <div class="calc">
+            <input id="number" type="number">
+
+            <select id="values" name="values">
+              <option value="ms">Metre per Second</option>
+              <option value="knot">Knot</option>
+              <option value="kmh">Kilometre per Hour</option>
+              <option value="fps">Foot per Second</option>
+              <option value="mph">Mile per Hour</option>
+            </select>
+
+            <button id="submit">Submit</button>
+          </div>
+
+          <div class="wind-result wind-hidden">
+            <div class="wind-info">
+              <span class="value-desc">Beaufort Number:</span> <span id="beaufort-num"></span>
+              <span class="value-desc">Wind Speed:</span> <span id="wind-speed"></span>
+              <span class="value-desc">Description:</span> <span id="wind-name"></span>
+              <span class="value-desc">Wave Height:</span> <span id="wave-height"></span>
+              <span class="value-desc">Sea Conditions:</span> <span id="sea"></span>
+              <span class="value-desc">Land Conditions:</span> <span id="land"></span>
+            </div>
+          </div>
+        </section>
+
+    </body>
+    
+</html>
